@@ -1,0 +1,35 @@
+﻿@model IEnumerable<AnimalShelter.Models.Pet>
+
+@{
+    ViewBag.Title = "ShowDogs";
+}
+<style>
+    body {
+        background-color: #dbdbdb;
+    }
+
+    .card-title, h2 {
+        font-family: 'Oswald', sans-serif;
+    }
+</style>
+
+
+
+
+<h2>DOGS</h2>
+
+<br />
+<br />
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <div class="card col-md-4">
+            <img class="center-block" src="~/Content/@item.Photo" @Html.DisplayFor(modelItem => item.Photo) height="225" width="300" alt=@Html.DisplayFor(modelItem => item.Name) />
+            <h3 class="card-title text-center">@Html.DisplayFor(modelItem => item.Name)   </h3>
+            <h5 class="card-subtitle text-center">@Html.DisplayFor(modelItem => item.Breed)<text> &nbsp; &nbsp;  &nbsp; &nbsp;</text>||<text> &nbsp; &nbsp; &nbsp; &nbsp;</text> @Html.DisplayFor(modelItem => item.Age)</h5>
+            <a href="#" class="btn btn-primary center-block">Come Visit Me!</a>
+            <p><br /></p>
+            <p><br /></p>
+        </div>
+    }
+</div>

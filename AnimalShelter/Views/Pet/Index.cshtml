@@ -1,0 +1,98 @@
+﻿@model IEnumerable<AnimalShelter.Models.Pet>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<style>
+    body {
+        background-color: #dbdbdb;
+        font-family: 'Oswald', sans-serif;
+    }
+</style>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Breed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Species_Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Coat_Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date_Arrived_In_Shelter)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Spayed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Neutered)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Notes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Photo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Breed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Species_Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Coat_Color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date_Arrived_In_Shelter)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Spayed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Neutered)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Notes)
+        </td>
+        <td>
+            <a href="~/Content/@item.Photo">@Html.DisplayFor(modelItem => item.Photo)</a>
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Pet_ID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.Pet_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Pet_ID })
+        </td>
+    </tr>
+}
+
+</table>

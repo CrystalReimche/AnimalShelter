@@ -1,0 +1,116 @@
+﻿/* *************************************					NAVIGATION 					**************************************** */
+
+.paddingmarginZero {
+    padding: 0;
+    margin: 0;
+}
+
+/* header area style */
+.headerStyle {
+    background-color: #292929;
+    padding: 20px 20px 30px 20px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Navigation area style */
+.navbar {
+    margin-bottom: 0px;
+    /*background-color: #B7E6DE;*/
+}
+
+
+.navbar > .container {
+    width: 100%;
+    
+}
+
+#humaneSociety{
+    text-transform: uppercase;
+    font-size: 4em !important;
+    text-align: center;
+}
+
+#bs-example-navbar-collapse-1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+/* *************************************					   BODY 					**************************************** */
+body {
+    background-color: #dbdbdb;
+    padding-top: 0px !important;
+}
+
+
+
+.browseHeader {
+    margin-top: 4rem;
+}
+
+/*#homeImage {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}*/
+
+
+h2 {
+    font-size: 2.5em;
+    font-family: 'Oswald', sans-serif;
+    text-align: center !important;
+}
+
+
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.img-responsive {
+    margin: 40px;
+    padding: 0px;
+    box-shadow: 3px 4px 23px -1px rgb(0, 0, 0);
+    border: 5px solid #ddd;
+    border-radius: 4px;
+}
+
+.images {
+    overflow: hidden;
+}
+
+img {
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+    -moz-transition: all 1.4s;
+    -webkit-transition: all 1.4s;
+    -webkit-transition: all .5s ease-in-out;
+    opacity: 0.8;
+}
+
+img:hover {
+    transform: scale(1.01);
+    opacity: 1;
+    transition: 1s;
+}
+
+.col-md-6 {
+    padding: 0px;
+}
+
+
+/* *************************************					   FOOTER 					**************************************** */
+
+footer, .container {
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+/*p {
+    padding-left: 30%;
+    padding-right: 30%;
+}*/

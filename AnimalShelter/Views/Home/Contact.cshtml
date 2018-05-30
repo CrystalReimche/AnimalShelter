@@ -1,0 +1,103 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<head>
+
+
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        body {
+            background-color: #dbdbdb;
+
+        }
+
+        .jumbotron {
+            background: none;
+            padding-top: 1em;
+            padding-bottom: 1.5em;
+        }
+            .jumbotron > h1 {
+                font-size: 4rem;
+        }
+
+        iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+
+        #inputEmail, #inputSubject, #inputMessage {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>Let's Keep In Touch!</h1>
+            <p class="tagline">Thank you for visiting our little slice of the internet.  If you would like to get into contact with our team, simply fill out the nifty form below. Cheers!</p>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" id="formID">
+
+
+
+                    <div class="form-group">
+                        <label for="inputEmail"><i class="glyphicon glyphicon-user"></i>&nbsp;  Name</label>
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Cool Person">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail"><i class="glyphicon glyphicon-envelope"></i>&nbsp;  Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="you@yourdomain.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail"><i class="glyphicon glyphicon-question-sign"></i>&nbsp;  Subject</label>
+                        <input type="text" class="form-control" id="inputSubject" placeholder="what's up?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputEmail"><i class="glyphicon glyphicon-pencil"></i>&nbsp;  Message</label>
+                        <textarea rows="6" class="form-control" id="inputMessage" placeholder="What's on your mind?"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="btn btn-success">Send Message</button>
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-lg-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6944.0684127674685!2d-112.62313683876349!3d45.23114284757013!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a47b91974dc4ed6!2sHumane+Society-Beaverhead+County!5e1!3m2!1sen!2sus!4v1526088480802" allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </div>
+        <br />
+        <div id="contactDetails">
+            <h4><strong>Come Give Us A Visit!</strong></h4>
+            <address>
+                <i class="glyphicon glyphicon-home"> Beaverhead County Animal Shelter</i><br />
+                <i class="glyphicon glyphicon-home"> 80 Lagoon Lane</i><br />
+                <i class="glyphicon glyphicon-home"> Dillon, MT 59725</i><br />
+                <i class="glyphicon glyphicon-phone-alt"> (406)683-8119</i>
+            </address>
+
+            <address>
+                <i class="glyphicon glyphicon-envelope"><strong> Email:</strong></i>   <a href="mailto:bvhdpets@qwestoffice.net">bvhdpets@qwestoffice.net</a><br />
+            </address>
+
+        </div>
+
+
+    </div>
+
+</body>

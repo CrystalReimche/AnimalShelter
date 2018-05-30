@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<head>
+    <link href="~/Content/Styles/homeIndex.css" rel="stylesheet" />
+  
+</head>
+
+@*<div >
+    <img id="homeImage" src="~/Content/Images/runningDogs.jpg" />
+</div>*@
+
+<div class="browseHeader">
+    <h2 >Browse Adoptable Pets!</h2>
+</div>
+   
+
+
+
+
+
+<div class=" flexContainer ">
+    <div class="container-fluid">
+
+
+        <div class="images col-md-6 ">
+            <a href="@Url.Action("ShowDogs", "Pet")">
+                <img class="browse img-responsive" src="~/Content/Images/dog.jpg" />
+            </a>
+        </div>
+        <div class="images col-md-6 text-center">
+            <a href="@Url.Action("ShowCats", "Pet")">
+                <img class="browse img-responsive" src="~/Content/Images/cat.jpg" />
+            </a>
+        </div>
+    </div>
+    
+    <hr />
+    <footer>
+
+        <div class="container text-center">
+            <p class="text-muted credit">&copy; @DateTime.Now.Year - Crystal Reimche</p>
+        </div>
+    </footer>
+</div>
